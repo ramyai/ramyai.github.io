@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+isProjectPage: true
+---
+
+<article class="project-page">
+  <h1>{{ title }} <span class="project-year">({{ year }})</span></h1>
+  {% if affiliation %}<p class="project-meta">{{ affiliation }}</p>{% endif %}
+
+  <div class="project-body">
+  - - -
+    {{ content | safe }}
+  </div>
+  - - -
+  {% if tools and tools.length %}
+  <p class="project-tools">{{ tools | join(", ") }}</p>
+  {% endif %}
+
+</article>

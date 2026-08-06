@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: ""
+---
+<div class="filter-bar" id="filter-bar">
+  {% for kw in collections.keywords %}
+  <button class="filter-btn{% if kw == 'featured' %} active{% endif %}" data-keyword="{{ kw }}">{{ kw }}</button>
+  {% endfor %}
+</div>
+
+<div class="project-grid" id="project-grid">
+  {% for project in collections.projects %}
+  <a class="project-block" href="{{ project.url }}" data-keywords="{{ project.data.keywords | join(' ') }}">
+    {% if project.data.thumbnail %}
+    <img class="project-thumb" src="{{ project.data.thumbnail }}" alt="{{ project.data.title }}" loading="lazy">
+    {% else %}
+    <div class="project-thumb project-thumb-empty"></div>
+    {% endif %}
+    <div class="project-info">
+      <h2>{{ project.data.title }} <span class="project-year">({{ project.data.year }})</span></h2>
+      {% if project.data.affiliation %}<p class="project-affiliation">{{ project.data.affiliation }}</p>{% endif %}
+      {% if project.data.tools %}<p class="project-tools">{{ project.data.tools | join(", ") }}</p>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<p class="empty-state" id="empty-state" hidden>No projects match the selected keywords.</p>
+
+<script src="/js/filter.js"></script>
