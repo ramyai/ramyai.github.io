@@ -30,13 +30,6 @@ h3{
   font-size: .8 rem;
 }
 
-intro {
-  margin: 0;
-  font-family: var(--font-serif);
-  color: var(--text);
-  background: var(--page-bg, var(--bg));
-  line-height: 1.5;
-}
 
 
 
@@ -122,11 +115,23 @@ main {
 /* Project detail page */
 .project-meta  { margin-top: 0; font-family: var(--font-sans); font-weight: 200}
 
-.project-body {}
+.project-body p,
+.project-body li {
+}
+
 .project-body p { margin: 1rem 0; }
 .project-tools {font-style: italic; }
 .back-link { margin-top: 0rem; padding-left: 1rem;}
 .back-link a:hover { color: var(--text); }
+
+
+intro {
+  margin: 0;
+  font-family: var(--font-serif);
+  color: var(--text);
+  background: var(--page-bg, var(--bg));
+  line-height: 1.5;
+}
 
 .project-page {
   font-weight: 400;
@@ -137,10 +142,12 @@ main {
 }
 
 .project-body img {
-  max-width: 100%;
-  border-radius: 4px;
+  max-width: 580px;
+  border-radius: 0px;
   display: block;
   margin: 1rem auto;
+    max-width: 100%;
+
 }
 
 .media-embed { margin: 1.5rem 0; }
@@ -150,12 +157,14 @@ main {
   border: none;
   border-radius: 4px;
 }
-.media-embed .caption {
+.caption {
   font-size: 0.85rem;
   color: var(--muted);
   margin-top: 0.4rem;
   font-family: var(--font-sans);
 }
+
+
 .image-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -219,6 +228,18 @@ h2 .project-year {
     width: 100%;
   }
 }
+
+.video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+  margin: 1rem auto;
+
+
+ 
+}
+
 
 .project-body a,
 .info-text a,
