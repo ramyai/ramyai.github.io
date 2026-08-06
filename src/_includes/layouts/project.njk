@@ -7,8 +7,9 @@ isProjectPage: true
   <h1>{{ title }} <span class="project-year">({{ year }})</span></h1>
   {% if affiliation %}<p class="project-meta">{{ affiliation }}</p>{% endif %}
 
-  <div class="project-body">
   - - -
+
+  <div class="project-body">
     {{ content | safe }}
   </div>
   - - -

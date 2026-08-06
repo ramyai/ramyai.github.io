@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css">
 </head>
 <body style="--page-bg: {{ background or '#000000' }};">
   <header class="site-header" id="top">
@@ -25,11 +26,11 @@
   </header>
 
   <main>
-  
+
     {{ content | safe }}
   </main>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <a href="#top" id="back-to-top">&uarr; Back to top</a>
   </footer>
 
@@ -43,7 +44,30 @@
       update();
     })();
   </script>
-</body>
-</html>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".photo-grid[data-folder]").forEach((grid) => {
+        const folder = grid.dataset.folder;
+        const gallery = grid.dataset.gallery || "gallery";
+        const lines = grid.textContent.split("\n").map((l) => l.trim()).filter(Boolean);
+        grid.innerHTML = lines.map((line) => {
+          const [file, caption] = line.split("::").map((s) => s && s.trim());
+          const src = folder + file;
+          const titleAttr = caption ? ` data-title="${caption}"` : "";
+          return `<a href="${src}" class="glightbox" data-gallery="${gallery}"${titleAttr}><img src="${src}" alt=""></a>`;
+        }).join("");
+      });
+
+      GLightbox({
+        selector: ".glightbox",
+        closeButton: true,
+        escKey: true,
+        outsideClick: true,
+      });
+    });
+  </script>
+
 </body>
 </html>

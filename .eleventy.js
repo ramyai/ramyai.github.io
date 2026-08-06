@@ -1,4 +1,14 @@
 module.exports = function (eleventyConfig) {
+
+    console.log("CONFIG FILE LOADED");
+
+
+  const fs = require("fs");
+  const path = require("path");
+
+
+
+
   // Static assets copied as-is into the build output
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");

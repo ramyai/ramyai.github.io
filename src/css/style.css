@@ -13,10 +13,11 @@
 
 body {
   margin: 0;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   color: var(--text);
   background: var(--page-bg, var(--bg));
   line-height: 1.5;
+  font-weight: 200;
 }
 
 h1, h2, .site-title {
@@ -29,14 +30,15 @@ h3{
   font-size: .8 rem;
 }
 
-body-long{
+intro {
   margin: 0;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   color: var(--text);
   background: var(--page-bg, var(--bg));
   line-height: 1.5;
-  font-weight: 200;
 }
+
+
 
 a { color: inherit; text-decoration: none; }
 
@@ -108,11 +110,12 @@ main {
   background-color: #f2f2f2;
   border-radius: 0px;
   margin-bottom: 0.6rem;
+  object-fit: cover;
 }
 .project-thumb-empty { background: repeating-linear-gradient(45deg, #f2f2f2, #f2f2f2 10px, #ebebeb 10px, #ebebeb 20px); }
 .project-info h2 {font-size: 1rem; font-weight: 600; margin: 0 0 0.15rem; }
 .project-info p { font-family: var(--font-sans); margin: 0.1rem 0; font-size: 0.85rem; color: var(--muted); }
-.project-info .project-tools { font-style: italic; font-family: var(--font-serif); font-size: .rem;}
+.project-info .project-tools { font-style: italic; font-family: var(--font-serif); font-size: .8rem;}
 
 .empty-state { color: var(--muted); margin-top: 2rem; }
 
@@ -122,7 +125,7 @@ main {
 .project-body {}
 .project-body p { margin: 1rem 0; }
 .project-tools {font-style: italic; }
-.back-link { margin-top: 0rem; }
+.back-link { margin-top: 0rem; padding-left: 1rem;}
 .back-link a:hover { color: var(--text); }
 
 .project-page {
@@ -151,6 +154,7 @@ main {
   font-size: 0.85rem;
   color: var(--muted);
   margin-top: 0.4rem;
+  font-family: var(--font-sans);
 }
 .image-row {
   display: grid;
@@ -173,7 +177,7 @@ main {
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem .5rem 1rem;
+  padding: 1rem 1.1rem 2rem;
   font-size: 0.95rem;
 }
 
@@ -231,3 +235,45 @@ h2 .project-year {
   text-decoration-color: var(--text);
 }
 
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 6px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 95vw;
+  max-width: 1200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+
+.photo-grid img {
+  height: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: auto;
+  object-fit: cover;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.project-body .photo-grid img {
+  margin: 0;
+  max-width: none;
+}
+
+.gslide-description {
+  background: #000 !important;
+}
+.gdesc-inner {
+  padding: 1rem !important;
+}
+.gslide-title {
+  font-family: var(--font-serif) !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
