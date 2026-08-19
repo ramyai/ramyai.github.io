@@ -8,6 +8,9 @@ tools:
   - Shader Graph
 keywords:
   - featured
+  - technical-art
+  - research
+
 order: 2
 thumbnail: /images/luminai/luminAIthumb.png
 background: "#0b0012"

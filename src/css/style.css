@@ -117,6 +117,20 @@ main {
 
 .project-body p,
 .project-body li {
+    text-align: left;
+
+}
+
+.project-body intro,
+.project-body intro p {
+  text-align: center;
+}
+
+.project-body essay,
+.project-body essay p {
+  text-align: left;
+    font-family: var(--font-serif);
+
 }
 
 .project-body p { margin: 1rem 0; }
@@ -136,7 +150,7 @@ intro {
 .project-page {
   font-weight: 400;
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   
 }
@@ -162,6 +176,7 @@ intro {
   color: var(--muted);
   margin-top: 0.4rem;
   font-family: var(--font-sans);
+  text-align: center;
 }
 
 
@@ -193,6 +208,10 @@ intro {
 h1 .project-year,
 h2 .project-year {
   font-weight: 20;
+}
+
+.project-body .caption {
+  text-align: center;
 }
 
 #back-to-top {
@@ -267,10 +286,11 @@ h2 .project-year {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   width: 95vw;
-  max-width: 1200px;
+  max-width: 1500px;
   margin-left: 50%;
   transform: translateX(-50%);
   justify-content: center;
+  align-items: center;
 }
 
 .photo-grid img {
@@ -300,4 +320,65 @@ h2 .project-year {
   color: #fff !important;
   font-size: 1rem !important;
   font-weight: 400 !important;
+}
+
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+  align-items: center;
+
+}
+.video-row {
+  display: flex;
+  gap: 1rem;
+  height: 320px; 
+  align-items: center;
+
+}
+.video-row.hz-pair {
+  height: 220px; 
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.video-tile {
+  position: relative;
+  height: 100%;
+}
+.video-tile video {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 2px;
+  background: #000;
+}
+
+.video-expand {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+}
+.video-expand:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+@media (max-width: 500px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
 }

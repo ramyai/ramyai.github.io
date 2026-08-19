@@ -51,21 +51,6 @@ of the project page.
 </div>
 ```
 
-Notes:
-- The page URL is auto-generated from the title (e.g. "My New Thing" ->
-  `/my-new-thing/`).
-- `keywords` is a list - add as many as you want (`games`, `research`,
-  `biking`, whatever). A new keyword automatically gets a filter button on
-  the landing page the next time you build - nothing else to configure.
-- Leave `featured` out of the list if you don't want it on the landing page
-  by default; it'll still show up once someone clicks its keyword's button
-  (as long as at least one of its keywords has a button, i.e. it's used by
-  some project).
-- Drop images into `src/images/` and reference them as `/images/filename.jpg`.
-- For precise layout, you can write raw HTML directly in the markdown body
-  (that's what `.image-row` and `.media-embed` above are - defined in
-  `src/css/style.css`, tweak them or add your own classes there).
-
 ## Local development (live preview while you edit)
 
 ```bash
@@ -97,17 +82,3 @@ One-time setup after you push this repo to GitHub:
    for the exact records.
 4. Push to `main` - the Actions tab will show the build/deploy running, and
    the site will be live a minute or two later.
-
-## Editing text-heavy pages (Info)
-
-`src/info.md` is just markdown - edit the text, add links, add an image
-with `![alt](/images/photo.jpg)`, etc.
-
-## Optional: a visual admin panel later
-
-If down the road you (or someone helping you) want a proper point-and-click
-admin UI instead of editing markdown files directly, [Decap CMS](https://decapcms.org/)
-can be dropped into this same repo (it edits these same markdown files via
-GitHub, so nothing about the site structure has to change). It needs a small
-one-time OAuth setup, so it's left out of this initial version - happy to
-add it whenever you want.

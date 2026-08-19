@@ -1,7 +1,7 @@
 ---
 title: Come Sit
 year: 2025
-affiliation: Personal Installation
+affiliation: 
 tools:
   - p5.js
   - WebGL
@@ -12,14 +12,18 @@ tools:
   - garden net
 keywords:
   - featured
+  - technical-art
   - personal
+
+
 order: 5
 thumbnail: /images/comesit/thumbnail.jpg
 background: "#1A0011"
 ---
-<intro>*Come Sit on My Bed* is an interactive projection-mapped installation in my bedroom </intro>
+<intro>
+<i>Come Sit on My Bed</i> is an interactive projection-mapped installation in my bedroom </intro>
 
-Late last Spring, I invited my friends into the space most sacred to me: my bedroom. One at a time, I asked them to enter my room and sit on my bed. As they settled in, a system would start to track their faces and project them across the floating web of paper screens that I installed and slept under over the past week.
+Late last Spring, I invited my friends into the space most sacred to me: my bedroom. One at a time, I asked them to enter my room and sit on my bed. As they settle in, a system would start tracking their faces and project them across the floating web of paper screens that I installed and slept under over the past week.
 
 The paper is thin enough to hold a two-way projection. From my bed, my friends watched their multiplied, distorted, selves reflected across my personal space. Most didn't immediatley realize it, but from my doorway, I could see their reactions through the other side of the sheets.
 
@@ -29,6 +33,7 @@ The paper is thin enough to hold a two-way projection. From my bed, my friends w
   <iframe src="https://www.youtube.com/embed/55eTfs00Aog?si=CrTXpY1eWxBVeDBL" allowfullscreen></iframe>
   <p class="caption"></p>
 </div>
+
 
 
 <div class="photo-grid" data-folder="/images/comesit/" data-gallery="come-sit">

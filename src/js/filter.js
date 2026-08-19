@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const blocks = Array.from(document.querySelectorAll(".project-block"));
   const emptyState = document.getElementById("empty-state");
 
-  // Only one keyword is ever "on" at a time (radio-button behavior), starting
-  // with "featured" to match the default landing page. Clicking a button
-  // switches the active keyword entirely - it doesn't add to the previous one.
+  // Only one keyword is ever "on" at a time 
+
   let active = "featured";
 
   function render() {

@@ -6,7 +6,7 @@ tools:
   - JavaScript
   - D3.js
 keywords:
-  - research
+  - technical-art
 order: 3
 thumbnail: /images/colorviz-thumb.jpg
 ---

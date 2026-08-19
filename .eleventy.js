@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
-  // Turns a project title into a clean URL slug, e.g. "XR-penter" -> "xr-penter"
   eleventyConfig.addFilter("slugify", function (str) {
     return String(str)
       .toLowerCase()
@@ -36,8 +35,13 @@ module.exports = function (eleventyConfig) {
     });
     const rest = Array.from(set)
       .filter((k) => k !== "featured")
+      .filter((k) => k !== "personal")
+      .filter((k) => k !== "technical-art")
+
       .sort((a, b) => a.localeCompare(b));
-    return ["featured", ...rest];
+      return ["featured", "technical-art", ...rest, "personal"];
+
+      
   });
 
   // Projects sorted by an optional "order" front matter field (lower = earlier),

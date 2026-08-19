@@ -16,18 +16,19 @@ background: '#9E8E82'
 
 <intro>
 XR-penter was developed over my 12-week internship at the University of Tokyo as an NSF-IRES fellow. I joined IGARASHI UI Lab's Computational Carpentry group, and developed this research under the guidance of Dr. Doğa Doğan (Adobe), Dr. Maria Larsson and Dr. Takeo Igarashi (both UTokyo). 
+
+<b>update (Jan 16, 2025): </b> This work has been accepted as a full paper into CHI 2025! dl.acm.org/doi/full/10.1145/3706598.3713331
+
 </intro>
 
-<b>update (Jan 16, 2025):</b> This work has been accepted as a full paper into CHI 2025! dl.acm.org/doi/full/10.1145/3706598.3713331
+
 
 <h3>Video Figure</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F5o5gKcjsQI?si=qt9lDqGl4-KEdUDl" frameborder="0" allow=" autoplay; picture-in-picture" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
-
-A big thanks to woodworker Geoffrey Hazard for his help and expertise.
-<!-- <div class="image-row">
-  <img src="/images/xr-penter-1.jpg" alt="">
-  <img src="/images/xr-penter-2.jpg" alt="">
-</div> -->
+<div style="display: flex; justify-content: center;">
+<iframe style="aspect-ratio: 16 / 9; width: 100% !important;"   src="https://www.youtube.com/embed/F5o5gKcjsQI?si=qt9lDqGl4-KEdUDl" frameborder="0" allow=" autoplay; picture-in-picture" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+</div>
+<br>
+<i><intro>A big thanks to woodworker Geoffrey Hazard for his help and expertise.</h3></intro>
 
 
