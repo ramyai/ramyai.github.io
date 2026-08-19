@@ -97,7 +97,7 @@ main {
 .project-block { display: block; }
 .project-thumb {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4.8 / 3;
   background-size: cover;
   background-position: center;
   background-color: #f2f2f2;
@@ -129,7 +129,7 @@ main {
 .project-body essay,
 .project-body essay p {
   text-align: left;
-    font-family: var(--font-serif);
+  font-family: var(--font-serif);
 
 }
 
@@ -162,7 +162,10 @@ intro {
   margin: 1rem auto;
     max-width: 100%;
 
+    
 }
+
+
 
 .media-embed { margin: 1.5rem 0; }
 .media-embed iframe {
@@ -303,6 +306,12 @@ h2 .project-year {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.photo-grid a:only-child img {
+  height: 450px;
+  max-width: 100%;
+}
+
 
 .project-body .photo-grid img {
   margin: 0;
