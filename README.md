@@ -81,4 +81,4 @@ One-time setup after you push this repo to GitHub:
    check [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
    for the exact records.
 4. Push to `main` - the Actions tab will show the build/deploy running, and
-   the site will be live a minute or two later.
+   the site will be live a 
