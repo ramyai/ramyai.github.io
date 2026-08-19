@@ -38,7 +38,10 @@ In late 2022, I took a really long walk. I was studying at The Glasgow School of
 
 A bothy is a basic shelter, tucked away in the Scottish Highlands, and left unlocked for any traveler in need of refuge without payment or reservation. Bothies are too remote to access by car, and with little digital documentation, the only way to view one is to set out on a long hike by foot. Instead of spending 8 hours tied to my desk, I could spend the same amount of time moving through nature, preserving my experience in a digital artifact that could be shared with others. I didn't see a single person on the trail until the final mile, and my solitude made the experience even rarer.
 
-<img src="/images/bothy/1.png" alt="" style="width: 780px;">
+
+<div class="photo-grid" data-folder="/images/bothy/" data-gallery="bothy">
+1.png ::
+</div>
 
 It was a sunny day in Blair Athol when I started my journey, which was beautiful weather to hike in, but suboptimal for photogrammetry. When I finally spotted the bothy’s faint outline, clouds miraculously appeared, turning the sky into an ideal shade of gray. I started circling around the bothy with the whole structure in my camera’s field of view, stumbling across the waterlogged terrain as I captured my photos. I then took a few steps forward and repeated the process. After six rotations, I ended up pressed against the bothy’s mossy stone, completing the scan just as it began to rain.
 
@@ -61,7 +64,9 @@ By the time I was done assembling the virtual environment, I could walk right up
 
 Part of my fascination with the bothy lies in its mystery: a traveler may not know about the building's size or condition beforehand, but they can expect a weatherproof shelter and a story to tell. I embraced uncertainty on my own trek to Allt Scheicheachan; I did not know if I would manage to locate the building, let alone scan it. If I willfully exposed the bothy to the player of my game, the most essential part of my experience would be lost in translation. To preserve what made the bothy sacred to me, I had to obscure its true form. 
 
-<img src="/images/bothy/5.png" alt="" style="width: 780px;">
+<div class="photo-grid" data-folder="/images/bothy/" data-gallery="bothy">
+5.png ::
+</div>
 
 As the viewer approaches the bothy, it gradually begins to undulate and wobble, eventually tessellating into a mosaic of fractured polygons. The scene's shaders break and shards of bothy fly around the viewer, leaving them trapped in a swirl of mangled data. The audio also reacts to the viewer’s location, with recordings of Cairngorm winds amplifying the distortion as they enter the heart of the bothy. 
 
@@ -85,7 +90,8 @@ These manipulations of real audiovisual data allow the viewer to confront the di
     </div>
   </div>
 
-<img src="/images/bothy/9.png" alt="" style="width: 900px;">
-
+<div class="photo-grid" data-folder="/images/bothy/" data-gallery="bothy">
+9.png ::
+</div>
 
 </essay>
