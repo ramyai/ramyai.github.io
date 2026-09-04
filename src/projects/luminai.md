@@ -10,6 +10,8 @@ keywords:
   - featured
   - technical-art
   - research
+  - live-media 
+
 
 order: 2
 thumbnail: /images/luminai/luminAIthumb.png

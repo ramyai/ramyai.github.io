@@ -1,6 +1,6 @@
 ---
 title: In Between (PUP Short Film)
-year: 2024
+year: 2023
 affiliation: Pixar Animation Studios
 tools:
   - Nuke

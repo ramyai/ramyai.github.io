@@ -37,9 +37,10 @@ module.exports = function (eleventyConfig) {
       .filter((k) => k !== "featured")
       .filter((k) => k !== "personal")
       .filter((k) => k !== "technical-art")
+      .filter((k) => k !== "research")
 
       .sort((a, b) => a.localeCompare(b));
-      return ["featured", "technical-art", ...rest, "personal"];
+      return ["featured", "technical-art", "research",...rest, "personal"];
 
       
   });

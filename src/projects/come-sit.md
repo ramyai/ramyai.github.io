@@ -11,9 +11,9 @@ tools:
   - thread
   - garden net
 keywords:
-  - featured
   - technical-art
   - personal
+  - live-media 
 
 
 order: 5

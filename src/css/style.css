@@ -124,6 +124,8 @@ main {
 .project-body intro,
 .project-body intro p {
   text-align: center;
+  font-size: 1.1rem;
+
 }
 
 .project-body essay,
@@ -176,7 +178,6 @@ intro {
 }
 .caption {
   font-size: 0.85rem;
-  color: var(--muted);
   margin-top: 0.4rem;
   font-family: var(--font-sans);
   text-align: center;
@@ -303,8 +304,9 @@ h2 .project-year {
   flex-basis: auto;
   width: auto;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 0px;
   cursor: pointer;
+  
 }
 
 .photo-grid a:only-child img {

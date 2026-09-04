@@ -10,10 +10,11 @@ tools:
 keywords:
   - personal
   - technical-art
+  - featured
   
   
   
-order: 2
+order: 20
 thumbnail: /images/bothy/thumb.png
 background: "#293C57"
 ---
