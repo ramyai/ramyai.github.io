@@ -10,7 +10,6 @@ tools:
 keywords:
   - personal
   - technical-art
-  - featured
   
   
   

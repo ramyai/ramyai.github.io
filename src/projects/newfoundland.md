@@ -1,14 +1,13 @@
 ---
-title: Newfoundland Bikepacking
+title: Newfoundland T'Railway
 year: 2022
 affiliation: 
 tools: 
-    - Photography
+    - Bikepacking Trip
 keywords: 
     - personal
-    - of-hand-and-dirt
   
-order: 8
+order: 14
 thumbnail: /images/newfoundland/7.jpg
 background: "#4670a1"
 ---

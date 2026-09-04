@@ -6,9 +6,9 @@ tools:
     - Found aluminum, Inkscape, Fablight laser cutter
 keywords: 
     - personal
-    - of-hand-and-dirt
+    - learning-to-make
   
-order: 2
+order: 12
 thumbnail: /images/chain/thumb.png
 background: "#000000"
 ---
